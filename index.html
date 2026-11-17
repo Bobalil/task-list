@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Список задач</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <div class="header">
+    <h1>📋 Список задач</h1>
+    <button id="theme-toggle" class="theme-toggle" title="Переключить тему" aria-label="Переключить тему">
+      <span class="icon-light">☀️</span>
+      <span class="icon-dark">🌙</span>
+    </button>
+  </div>
+
+  <div class="input-row">
+    <input id="task-input" type="text" placeholder="Что нужно сделать?" maxlength="200" autocomplete="off">
+    <button id="add-btn">Добавить</button>
+  </div>
+
+  <ul id="task-list"></ul>
+  <div class="empty" id="empty-msg">Задач пока нет. Добавьте первую! ✍️</div>
+  <div class="counter" id="counter"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
